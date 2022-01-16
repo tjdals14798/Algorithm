@@ -22,26 +22,36 @@ public class bj_2798 {
 		int cnt = sc.nextInt();
 		int num = sc.nextInt();
 		int arr[] =new int[cnt]; 
-		int sum=0;
-		int max=0;
 		
 		for(int i = 0; i < cnt; i++) {
 			arr[i]=sc.nextInt();
 		}
 		
-		for(int i = 0; i < cnt-2; i++) {
-			
-			for(int j =0; j < cnt-1; j++) {
-				
-				for(int k =0; k < cnt; k++) {
-					sum+=arr[i]+arr[j]+arr[k];
-					
-					if(max<sum) {
+		int res = black(arr,cnt,num);
+		System.out.println(res);
+	}	
+	static int black(int[] arr, int cnt, int num) {
+		int result = 0;
+
+		for (int i = 0; i < cnt - 2; i++) {
+
+			for (int j = i + 1; j < cnt - 1; j++) {
+
+				for (int k = j + 1; k < cnt; k++) {
 						
+					int sum = arr[i] + arr[j] + arr[k];
+						
+					if (num == sum) {	
+						return sum;
+					}
+						
+					if(result < sum && sum < num) {
+						result = sum;
 					}
 				}
 			}
-		}
+		}		
+		return result;
 	}
 
 }
