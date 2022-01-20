@@ -1,4 +1,3 @@
-
 public class bj_15596 {
 
 	class Test{
