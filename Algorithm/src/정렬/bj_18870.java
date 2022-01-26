@@ -43,7 +43,7 @@ public class bj_18870 {
 		
 		StringBuilder sb = new StringBuilder();
 		for(int key : arr) {
-			int ranking = rankmap.get(key); // key에 대한 순위 값
+			int ranking = rankmap.get(key); // key에 대한 순위 값 
 			sb.append(ranking).append(' ');
 		}
 		System.out.println(sb);
