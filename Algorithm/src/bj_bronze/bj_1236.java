@@ -2,8 +2,6 @@ package bj_bronze;
 
 import java.util.Scanner;
 
-import javax.swing.text.StyledEditorKit.BoldAction;
-
 public class bj_1236 {
 	
 //	영식이는 직사각형 모양의 성을 가지고 있다. 성의 1층은 몇 명의 경비원에 의해서 보호되고 있다. 영식이는 모든 행과 모든 열에 한 명 이상의 경비원이 있으면 좋겠다고 생각했다.
@@ -24,6 +22,8 @@ public class bj_1236 {
 		boolean res[] = new boolean[N];
 		boolean arr[][] = new boolean[N][M];
 		
+		// arr에 true, false 저장
+		
 		for(int i = 0;i<arr.length;i++) {
 			for(int j = 0;j<arr[0].length;j++) {
 				String str = sc.next();
@@ -35,6 +35,8 @@ public class bj_1236 {
 			}
 		}
 		
+		// 경비원이 있으면 true 없으면 false
+		
 		for(int i = 0;i<arr.length;i++) {
 			for(int j = 0;j<arr[0].length;j++) {
 				if(arr[i][j]==true) {
@@ -42,6 +44,8 @@ public class bj_1236 {
 				}
 			}
 		}
+		
+		// 경비원이 없다면 추가해야하는 경비원의 수 ++;
 		
 		for(int i = 0;i < N;i++) {
 			if(res[i]==false) {
