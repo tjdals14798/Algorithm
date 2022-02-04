@@ -2,7 +2,7 @@ package SW_EA;
 
 import java.util.Scanner;
 
-public class 두수비교 {
+public class SW_2070 {
 
 	public static void main(String[] args) {
 
