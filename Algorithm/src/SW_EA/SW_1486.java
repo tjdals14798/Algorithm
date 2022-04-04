@@ -22,8 +22,7 @@ public class SW_1486 {
 			T(0,0);
 			
 			System.out.printf("#%d %d\n",tc,min-B);
-
-			
+		
 		}
 	}
 	public static void T(int num,int sum) {
