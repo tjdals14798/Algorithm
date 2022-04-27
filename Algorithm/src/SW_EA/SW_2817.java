@@ -36,8 +36,6 @@ public class SW_2817 {
 		if(sum>K || idx>N-1) return;
 		solve(idx+1, sum+arr[idx]);
 		solve(idx+1, sum);
-		
-		
 	}
 
 }
