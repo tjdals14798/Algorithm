@@ -1,7 +1,6 @@
 package Baekjoon;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
@@ -32,12 +31,12 @@ public class bj_2600 {
 				}
 			}
 
-			// mex를 구하는 과정.
-			int mex = 0;
-			while (check[mex]) {
-				mex++;
+			// max를 구하는 과정.
+			int max = 0;
+			while (check[max]) {
+				max++;
 			}
-			dp[i] = mex;
+			dp[i] = max;
 		}
 
 		int T = 5;
