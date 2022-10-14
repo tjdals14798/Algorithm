@@ -39,7 +39,6 @@ public class bj_1004 {
 
             int movementIndex = getMovement(move);
             boolean flag = false;
-            System.out.println(movements[movementIndex][0]);
             if(mapValidator(movements[movementIndex], kingX, kingY)) {
 
                 int xx = kingX + movements[movementIndex][0];
