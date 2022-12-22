@@ -20,7 +20,6 @@ public class bj_17266 {
 		int L = 1, R = N, H = 0; //좌,우 끝/ 가로등의 높이
 		while(L <= R) {
 			int max = (L+R) / 2;
-			System.out.println("max "+max);
 			if(light(max)) {
 				H = max;
 				R = max-1;
@@ -37,8 +36,6 @@ public class bj_17266 {
 		
 		for(int i = 0; i < arr.length; i++) {
 			if(arr[i] - x <= s) {
-				System.out.println("빼기 " + (arr[i] - x));
-				System.out.println("s "+s);
 				s = arr[i] + x;
 			}
 			else return false;
