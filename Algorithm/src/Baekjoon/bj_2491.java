@@ -14,7 +14,7 @@ public class bj_2491 {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		for(int i = 0; i < n; i++) arr[i] = Integer.parseInt(st.nextToken());
 		
-		int ucnt = 1, max = 1, dcnt = 0;
+		int ucnt = 1, max = 1, dcnt = 1;
 		for(int i = 0; i < n-1; i++) {
 			if(arr[i] <= arr[i+1]) ucnt++;
 			else ucnt = 1;
