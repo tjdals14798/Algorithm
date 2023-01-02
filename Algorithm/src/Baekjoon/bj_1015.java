@@ -31,6 +31,7 @@ public class bj_1015 {
 			sortMap.remove(k);
 		}
 		System.out.println(sb);
+//		1
 	}
 	
 	public static <K, V> K getKey(Map<K, V> map, V value) {		 
