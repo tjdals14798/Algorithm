@@ -19,6 +19,7 @@ public class bj_2587 {
 		Arrays.sort(arr);
 		int avg = sum / 5; 
 		mid = arr[2];
+		
 		System.out.print(avg + "\n" + mid);
 	}
 }
