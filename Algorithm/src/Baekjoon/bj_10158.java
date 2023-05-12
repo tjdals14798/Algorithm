@@ -16,34 +16,33 @@ public class bj_10158 {
 		int y = Integer.parseInt(st.nextToken());
 		int n = Integer.parseInt(br.readLine());
 		
-		x = w - Math.abs(w - (x + n) % (w * 2));
-		y = h - Math.abs(h - (y + n) % (h * 2));
-		
 //				시간초과
-//		int tx = n % (w*2);
-//		boolean ck = false;
-//		for(int i = 0; i < tx; i++) {
-//			if(!ck) x++;
-//			else x--;
-//			if(x == w) ck = true;
-//			else if(x == 0) ck = false;
-//		}
-//		
-//		int ty = n % (h*2);
-//		ck = false;
-//		for(int i = 0; i < ty; i++) {
-//			if(!ck) y++;
-//			else y--;
-//			if(y == h) ck = true;
-//			else if(y == 0) ck = false;
-//		}
+		int tx = n % (w*2);
+		boolean ck = false;
+		for(int i = 0; i < tx; i++) {
+			if(!ck) x++;
+			else x--;
+			if(x == w) ck = true;
+			else if(x == 0) ck = false;
+		}
 		
-//				시간초과	
+		int ty = n % (h*2);
+		ck = false;
+		for(int i = 0; i < ty; i++) {
+			if(!ck) y++;
+			else y--;
+			if(y == h) ck = true;
+			else if(y == 0) ck = false;
+		}
+		
 //		if(((x + n) / w) % 2 == 0) x = (x + n) % w;
 //		else x = w - (x + n) % w;
 //		
 //		if(((y + n) / h) % 2 == 0) y = (y + n) % h;
 //		else y = h - (y + n) % h;
+		
+//		x = w - Math.abs(w - (x + n) % (w * 2));
+//		y = h - Math.abs(h - (y + n) % (h * 2));
 		
 		System.out.println(x+" "+y);
 		
