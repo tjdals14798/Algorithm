@@ -26,7 +26,7 @@ public class youtube {
 		String inputLine;
 		StringBuffer response = new StringBuffer();
 		while((inputLine = br.readLine()) != null) {
-			response.append(inputLine);
+			response.append(inputLine).append("\n");
 		}
 		br.close();
 		
